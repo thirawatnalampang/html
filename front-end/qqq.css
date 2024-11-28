@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "kanit";
+    src: url("./Kanit/Kanit-Regular.ttf");
+  }
+  
+  body {
+    font-family: "kanit";
+    background-image: url("https://i.pinimg.com/originals/db/a0/8c/dba08cf84df6210e82862c9cb9c0272a.gif");
+    background-size: cover;
+}
+.qwe{
+    font-size: 30px;
+    text-align: left;
+  }
+  
+  .header-form {
+    width: 140px;
+  }
+  
+@media screen and (max-width: 800px){
+  .container {
+    flex-direction: column;
+    align-items: auto;
+  }
+  .form {
+    width: 100%;
+  }
+}
+
+
+
+

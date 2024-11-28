@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "kanit";
+    src: url("./Kanit/Kanit-Regular.ttf");
+    
+  }
+
+body {
+    font-family: "kanit";
+    background-image: url("https://images3.alphacoders.com/120/1209083.jpg");
+    background-size: cover;
+  }
+ .container {
+    display: flex;
+    flex-direction: column;
+    align-items: auto;
+    margin-bottom: 10px;
+  }
+    
+
+.form-input {
+    margin-right: 0px;
+    padding: 5px;
+    
+  }
+  
+  .header-form {
+    font-weight: bold;
+    width: 500px;
+    
+    }
+  .flex1{
+    
+    flex-direction: row;
+    align-items: normal;
+    margin-bottom: 10;
+   }
+  
+  .form {
+    width: 250px;
+    padding: 5px;
+    border: 1px solid #0095ff;
+    border-radius: 5px;
+    margin-right: 20px;
+    
+  }
+  .form1 {
+    width: 1000px;
+    padding: 5px;
+    border: 1px solid #0095ff;
+    border-radius: 5px;
+    margin-right: 20px;
+  }
+  .button {
+    padding: 10px;
+    background-color: #2f00ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px; 
+}
+ .ttt_user{
+    background-color: rgb(255, 255, 0);
+     padding: 10px;
+     text-align: justify;
+     text-decoration: none;
+     display: block;
+     max-width: 150px;
+     width: 150%;
+     box-sizing: border-box;
+     border: 3px solid rgb(0, 42, 255);
+     border-radius: 20px;
+     font-size: 15px;
+     font-weight: bold;
+     margin-bottom: -40px;
+     padding-top: 40px; 
+     margin-top: 10px; 
+     margin-left: -14px;
+   }
+
+   .message{
+    background-color: pink;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: none;
+  }
+  .message.success {
+    background-color: rgb(255, 255, 0);
+    display: block;
+  }
+
+  .message.danger {
+    background-color: rgb(238, 255, 0);
+    display: block;
+  }
+  @media screen and (max-width: 800px){
+    .container {
+      flex-direction: column;
+      align-items: auto;
+    }
+    .form {
+      width: 100%;
+    }
+  }
+  
+
+

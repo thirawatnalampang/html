@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ระบบบันทึกข้อมูลการจัดการอสังหาริมทรัพย์</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 style="color: #002fff;">ระบบบันทึกข้อมูลการจัดการอสังหาริมทรัพย์</h1>
+  <div class="ttt_user"></div><a href="user.html">User managment</a>
+  <div class="container">
+   <div class="header form-input"></div>
+    <h2 style="color: rgb(0, 55, 255);">ข้อมูลทรัพย์สิน</h2>
+    <div class="flex form-input">
+      <div class="header-form">ที่ตั้ง</div>
+      <input class="form1" name="location" type="text"> 
+    </div>
+    <div class="flex form-input">
+      <div class="header-form">ขนาด (ตารางวา)</div>
+      <input class="form" name="size" type="number" min="0" max="10000000000"> 
+    </div>
+    <div class="flex status form-input">
+      <div class="header-form">สถานะการใช้งาน</div>
+      <div class="flex1">
+        <div>
+          <input name="status" type="radio" value="พร้อมไช้งาน"> พร้อมไช้งาน
+        </div>
+        <div>
+          <input name="status" type="radio" value="ไม่พร้อมไช้งาน"> ไม่พร้อมไช้งาน
+        </div>
+      </div>
+      
+    <h2 style="color: rgb(0, 21, 255);">ข้อมูลการเช่าขาย</h2>
+    <div class="flex person form-input">
+      <div class="header-form">ผู้เช่าหรือผู้ซื้อ</div>
+      <div class="flex1">
+        <div>
+          <input name="person" type="radio" value="ผู้เช่า"> ผู้เช่า
+        </div>
+        <div>
+          <input name="person" type="radio" value="ผู้ซื้อ"> ผู้ซื้อ
+        </div>
+      </div>
+    <div class="header-form">รายละเอียดผู้เช่า/ซื้อ</div>
+    <input class="form1" name="purchasedetails" type="text"> 
+    <div class="header-form">เงื่อนไขการเช่า/ซื้อ</div>
+    <input class="form1" name="rentalterms" type="text"> 
+    <h2 style="color: rgb(0, 38, 255);">รายงานการบำรุงรักษาและค่าใช้จ่าย</h2>
+    <div class="header-form">การบำรุงรักษา</div>
+    <input class="form1" name="maintenance" type="text"> 
+    <div class="header-form">ค่าใช้จ่ายประจำเดือน (บาท)</div>
+    <input class="form" name="monthlypayment" type="number" min="0" max="10000000000"> 
+    <div id="message" class="message"></div>
+    <div class="center">
+      <button onclick="submitData()" class="button">ส่งข้อมูล</button>
+ </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
